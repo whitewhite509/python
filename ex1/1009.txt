@@ -1,0 +1,15 @@
+#猜數字
+import random
+pwd=random.randint(0,300)
+print('請輸入0~300間的數字:\t')
+for i in range(15):   
+    guess=int(input())
+    if guess==pwd:
+        print("right")
+        break        
+    elif guess < pwd:
+        print("太小")
+        continue
+    else:
+        print("太大")
+        continue
